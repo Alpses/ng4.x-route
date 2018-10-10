@@ -1,0 +1,20 @@
+<h2>My Heroes</h2>
+<!-- <div>
+  <label>Hero Name:</label>
+</div> -->
+
+<!-- <ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    
+  </li>
+</ul> -->
+
+<ul *ngIf = "heroes" class="mebSty">
+  <li *ngFor='let hero of heroes'>
+    <p>
+      <img [src]='hero.avatar_url' width="48" height="48" />
+      ID:<span>{{hero.id}}</span>
+      Name:<span>{{hero.login}}</span>
+    </p>
+  </li>
+</ul>
