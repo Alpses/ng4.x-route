@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="text-align:center;">
   <img width="30" alt="Angular Logo" src="./favicon.ico">
   <h1 style="color:red;">
     {{ title }}
@@ -7,8 +7,10 @@
 </div>
 
 <nav>
-  <a routerLink="/heroes">Heroes</a>
+  <a routerLink="/heroes">Heroes List</a>
+  <span style="padding:60px;"></span>
+  <a routerLink="/dashboard">Heroes Dashboard</a>
 </nav>
 <router-outlet></router-outlet>
-<app-heroes></app-heroes>
+<!-- <app-heroes></app-heroes> -->
 <app-messages></app-messages>

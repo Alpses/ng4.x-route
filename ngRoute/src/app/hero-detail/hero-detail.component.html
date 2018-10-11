@@ -1,0 +1,12 @@
+<div *ngIf="heroes" class="heroDetail">
+  <li *ngFor="let hero of heroes" style="list-style:none;">
+      <h4 style="color:rgb(13, 0, 128);">{{hero.login | uppercase}} Details</h4>
+      <div><span>id:</span>{{hero.id}}</div>
+      <div>
+        <label>Name:
+          <input [(ngModel)]="hero.login" placeholder="name">
+        </label>
+      </div>
+  </li>
+</div>
+<button (click)="goBack()">返回</button>

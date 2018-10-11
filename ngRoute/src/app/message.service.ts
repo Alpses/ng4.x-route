@@ -8,7 +8,7 @@ export class MessageService {
   constructor() { }
   add(message: string) {
     this.messages.push(message);
-    console.log(this.messages);
+    console.log('msg:',this.messages);
   }
  
   clear() {

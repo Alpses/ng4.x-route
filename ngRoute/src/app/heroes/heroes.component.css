@@ -1,3 +1,42 @@
 .mebSty{
     list-style: none;
+    padding-left: 10px !important;
+}
+.mebSty li{
+    cursor: pointer;
+    background: #EEE;
+    position: relative;
+}
+.mebSty li.selected:hover{
+    background: #BBD8DC;
+    color:white;
+}
+.mebSty li:hover{
+    color:#607D8B;
+    background: #DDD;
+    left:.1em;
+}
+.mebSty li.hovered{
+    color:#607D8B;
+    background: #DDD;
+    left:.1em;
+}
+h4 {
+    color:purple；
+}
+.selected{
+    background:#CFD8DC !important;
+    color:blue;
+}
+div label input{
+    border:1px solid #666;
+}
+
+.mebSty ul li div{
+    height:56px !important;
+}
+.mebSty li dl:nth-child(2){
+    position: relative;
+    left: 60px;
+    top: -70px;
 }

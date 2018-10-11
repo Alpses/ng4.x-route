@@ -8,13 +8,33 @@
     
   </li>
 </ul> -->
-
+<hr/>
+<!-- <app-hero-detail [singleHero]="selectedHero" ></app-hero-detail> -->
+<hr/>
+<!-- <ul *ngIf = "heroes" class="mebSty">
+  <li *ngFor='let hero of heroes' 
+  (click)="onSelect(hero)"
+  [class.selected]= "hero == selectedHero"
+  (touchstart)="onHover(hero)"
+  [class.hovered]= "hero == hoveredHero"
+  >
+    <div style="height:56px;">
+      <dl>
+        <img [src]='hero.avatar_url' width="56" height="56" />
+      </dl>
+      <dl>
+        <dd>ID:{{hero.id}}</dd>
+        <dd>Name:{{hero.login}}</dd>
+      </dl>
+    </div>
+  </li>
+</ul> -->
 <ul *ngIf = "heroes" class="mebSty">
-  <li *ngFor='let hero of heroes'>
-    <p>
-      <img [src]='hero.avatar_url' width="48" height="48" />
-      ID:<span>{{hero.id}}</span>
-      Name:<span>{{hero.login}}</span>
-    </p>
+  <li *ngFor='let hero of heroes;let i = index'>
+      <a routerLink="/detail/{{i+1}}" class="{{i+1}}">
+        <img [src]='hero.avatar_url' width="56" height="56" />
+        <span>ID:{{hero.id}}</span>
+        <span>Name:{{hero.login}}</span>
+      </a>
   </li>
 </ul>
